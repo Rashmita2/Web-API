@@ -15,7 +15,7 @@ namespace Receipe.Controllers
         public ActionResult GetDishes()
         {
             string[] Dishes = { "Oxtail", "Curry chicken", "Dumplings" };
-            if (Dishes.Any())
+            if (!Dishes.Any())
                 return NotFound();
             return Ok(Dishes);
         }
