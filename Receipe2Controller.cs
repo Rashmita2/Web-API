@@ -19,8 +19,17 @@ namespace Receipe.Controllers
                 return NotFound();
             return Ok(Dishes);
         }
-
-       
+        /*
+         [HttpGet]
+        public ActionResult GetDishes([FromQuery] int count)
+        {
+            string[] Dishes = { "Oxtail", "Curry chicken", "Dumplings" };
+            if (!Dishes.Any())
+                return NotFound();
+            return Ok(Dishes.Take(count));
+        }
+        */
+ 
         [HttpDelete("{id}")]
         public ActionResult DeletReceipe(string id)
         {
