@@ -34,8 +34,6 @@ namespace WebApplication1.Controllers
                 },
         };
 
-       
-
         public List<Employee> GetAllEmployee()
         {
             return employees;
